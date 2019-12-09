@@ -26,19 +26,22 @@ a native-like phonetic category for Spanish /t/. In this case, we might
 be interested in a test showing that the learners’ VOT for /t/ is not
 statistically different from that of the native Spanish speaker group.
 
-For cases like these, we can use two one-sided tests (TOSTs).\[1\] In
-order to conduct a TOST, we need to consider what it means to be
-statistically non-different. In a null-hypothesis significance testing
-(NHST) framework, we generally test to see if a value is different from
-a point null (usually 0). If we stop to think about this, it is rarely
-the case that two means are exactly equivalent. For example, in speech
-research we deal with what is called the lack of invariance problem,
-which, in short, refers to the fact that we never produce two utterances
-in *exactly* the same way, physically, acoustically. So if I were to say
-“dog” five times, the /d/ will never be exactly the same. For this
-reason, we need to establish equivalence bounds.\[2\] That is, we need
-to think about how small a difference is small enough, in our expert
-opinion, to be considered equivalent to a null effect (i.e., 0).
+For cases like these, we can use two one-sided tests (TOSTs, or tests of
+equivalence). In order to conduct a TOST, we need to consider what it
+means to be statistically non-different. In a null-hypothesis
+significance testing (NHST) framework, we generally test to see if a
+value is different from a point null (usually 0). If we stop to think
+about this, it is rarely the case that two means are exactly equivalent.
+For example, in speech research we deal with what is called the lack of
+invariance problem, which, in short, refers to the fact that we never
+produce two utterances in *exactly* the same way, physically,
+acoustically. So if I were to say “dog” five times, the /d/ will never
+be exactly the same. For this reason, we need to establish equivalence
+bounds (these are similar to smallest effect size of interest \[SESI\]
+and regions of practical equivalence \[ROPEs\], if you are familiar with
+them). That is, we need to think about how small a difference is small
+enough, in our expert opinion, to be considered equivalent to a null
+effect (i.e., 0).
 
 At first glance this is much more difficult than testing for a
 difference, e.g., a t-test, because we are required to think a lot more
@@ -253,10 +256,3 @@ together they can affect the outcome of the test.
   - <https://cran.rstudio.com/web/packages/TOSTER/vignettes/IntroductionToTOSTER.html>
   - <https://github.com/Lakens/TOSTER>
   - <https://psyarxiv.com/v3zkt/>
-
-<!-- end list -->
-
-1.  TOSTs are also referred to as tests of equivalence.
-
-2.  See also smallest effect size of interest (SESI) and regions of
-    practical equivalence (ROPEs).
